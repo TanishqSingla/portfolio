@@ -6,6 +6,13 @@ export default component$(() => {
 
   return (
     <header>
+      <nav>
+        <ul className=''>
+          <li>About</li>
+          <li></li>
+          <li></li>
+        </ul>
+      </nav>
     </header>
   );
 });

@@ -23,9 +23,9 @@ export const RouterHead = component$(() => {
         rel="stylesheet"
       />
 
-      <meta property="og:site_name" content="Qwik" />
-      <meta name="twitter:site" content="@QwikDev" />
-      <meta name="twitter:title" content="Qwik" />
+      <meta property="og:site_name" content="Tanishq Singla" />
+      <meta name="twitter:site" content="@TanishqSingla_" />
+      <meta name="twitter:title" content="Tanishq Singla" />
 
       {head.meta.map((m) => (
         <meta {...m} />

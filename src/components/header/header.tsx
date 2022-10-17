@@ -6,11 +6,11 @@ export default component$(() => {
 
   return (
     <header>
-      <nav>
-        <ul className=''>
-          <li>About</li>
-          <li></li>
-          <li></li>
+      <nav class=''>
+        <ul class='flex'>
+          <li><a href=""></a>About</li>
+          <li><a href=""></a>Blog</li>
+          <li><a href=""></a>Contact</li>
         </ul>
       </nav>
     </header>

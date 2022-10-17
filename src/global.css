@@ -8,3 +8,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+  @apply bg-stone-200
+}
+
+.container {
+  @apply max-w-4xl mx-auto flex flex-col min-h-screen
+}
+
+main {
+  @apply px-4
+}

@@ -10,7 +10,7 @@
 @tailwind utilities;
 
 body {
-  @apply bg-stone-200
+  @apply bg-surface
 }
 
 .container {

@@ -5,7 +5,6 @@ export default function ({ size, color }: { [key: string]: string }) {
 			height={size}
 			fill={color}
 			viewBox="0 0 16.933119 16.933119"
-			id="svg5"
 			xmlns="http://www.w3.org/2000/svg"
 		>
 			<path

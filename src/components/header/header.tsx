@@ -1,6 +1,5 @@
 import { $, component$, useClientEffectQrl, useStore } from "@builder.io/qwik";
-import Moon from "../icons/Moon";
-import Sun from "../icons/Sun";
+import { Moon, Sun } from "../icons";
 
 export default component$(() => {
 	const store = useStore({ isDark: true });
@@ -12,6 +11,7 @@ export default component$(() => {
 				window.matchMedia("(prefers-color-scheme: dark)").matches)
 		) {
 			document.documentElement.classList.add("dark");
+			store.isDark = true
 		} else {
 			document.documentElement.classList.remove("dark");
 			store.isDark = false;
@@ -46,9 +46,9 @@ export default component$(() => {
 						}}
 					>
 						{store.isDark ? (
-							<Moon color="white" size="32px" />
+							<Sun color="black" size="1rem" />
 						) : (
-							<Sun color="white" size="32px" />
+							<Moon color="white" size="32px" />
 						)}
 					</button>
 				</div>

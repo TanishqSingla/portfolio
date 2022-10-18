@@ -11,7 +11,6 @@ export default component$(() => {
 				window.matchMedia("(prefers-color-scheme: dark)").matches)
 		) {
 			document.documentElement.classList.add("dark");
-			store.isDark = true
 		} else {
 			document.documentElement.classList.remove("dark");
 			store.isDark = false;
@@ -45,11 +44,12 @@ export default component$(() => {
 							toggleTheme();
 						}}
 					>
-						{store.isDark ? (
-							<Sun color="black" size="1rem" />
+						{/* {store.isDark ? (
+							<Sun color="white" size="32px" />
 						) : (
 							<Moon color="white" size="32px" />
-						)}
+						)} */}
+						<Sun color={store.isDark ? 'black' : 'white'} size="1rem" />
 					</button>
 				</div>
 			</nav>

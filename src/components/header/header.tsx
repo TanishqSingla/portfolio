@@ -1,7 +1,7 @@
 import { $, component$, useClientEffectQrl, useStore } from "@builder.io/qwik";
 
 export default component$(() => {
-  const store = useStore({isDark: true})  
+  const store = useStore({isDark: true});
 
 	const toggleTheme = $(() => {
 		if (
@@ -12,13 +12,14 @@ export default component$(() => {
 			document.documentElement.classList.add("dark");
 		} else {
 			document.documentElement.classList.remove("dark");
+      store.isDark = false;
 		}
 	});
 
 	useClientEffectQrl(toggleTheme);
 
 	return (
-		<header class="sticky bg-gray-100/40 backdrop-blur-sm px-4 py-4 mt-4 rounded-xl">
+		<header class="sticky bg-gray-100/40 dark:bg-gray-600/40 backdrop-blur-sm px-4 py-4 mt-4 rounded-xl dark:text-white">
 			<nav class="flex">
 				<ul class="flex gap-8 grow">
 					<li>

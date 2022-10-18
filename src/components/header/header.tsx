@@ -1,7 +1,9 @@
 import { $, component$, useClientEffectQrl, useStore } from "@builder.io/qwik";
+import Moon from "../icons/Moon";
+import Sun from "../icons/Sun";
 
 export default component$(() => {
-  const store = useStore({isDark: true});
+	const store = useStore({ isDark: true });
 
 	const toggleTheme = $(() => {
 		if (
@@ -12,7 +14,7 @@ export default component$(() => {
 			document.documentElement.classList.add("dark");
 		} else {
 			document.documentElement.classList.remove("dark");
-      store.isDark = false;
+			store.isDark = false;
 		}
 	});
 
@@ -20,7 +22,7 @@ export default component$(() => {
 
 	return (
 		<header class="sticky bg-gray-100/40 dark:bg-gray-600/40 backdrop-blur-sm px-4 py-4 mt-4 rounded-xl dark:text-white">
-			<nav class="flex">
+			<nav class="flex items-center">
 				<ul class="flex gap-8 grow">
 					<li>
 						<a href="/"></a>
@@ -36,12 +38,18 @@ export default component$(() => {
 					</li>
 				</ul>
 				<div class="theme-switcher">
-					<button onClick$={() => {
-            store.isDark = !store.isDark
-            localStorage.theme = store.isDark ? 'dark' : 'light';
-            toggleTheme();
-          }}>
-						theme
+					<button
+						onClick$={() => {
+							store.isDark = !store.isDark;
+							localStorage.theme = store.isDark ? "dark" : "light";
+							toggleTheme();
+						}}
+					>
+						{store.isDark ? (
+							<Moon color="white" size="32px" />
+						) : (
+							<Sun color="white" size="32px" />
+						)}
 					</button>
 				</div>
 			</nav>

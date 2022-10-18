@@ -1,13 +1,9 @@
 import { $, component$, useClientEffectQrl, useStore } from "@builder.io/qwik";
 
 export default component$(() => {
-	const themes = ["dark", "light"];
-
-	const store = useStore({ themeIndex: 0 });
+  const store = useStore({isDark: true})  
 
 	const toggleTheme = $(() => {
-		// I WANTED TO TRY SOMETHING SO LET ME BE
-		localStorage.theme = themes[store.themeIndex];
 		if (
 			localStorage.theme === "dark" ||
 			(!("theme" in localStorage) &&
@@ -16,7 +12,6 @@ export default component$(() => {
 			document.documentElement.classList.add("dark");
 		} else {
 			document.documentElement.classList.remove("dark");
-			store.themeIndex = 1;
 		}
 	});
 
@@ -40,12 +35,11 @@ export default component$(() => {
 					</li>
 				</ul>
 				<div class="theme-switcher">
-					<button
-						onClick$={() => {
-							store.themeIndex = store.themeIndex ^ 1;
-              toggleTheme();
-						}}
-					>
+					<button onClick$={() => {
+            store.isDark = !store.isDark
+            localStorage.theme = store.isDark ? 'dark' : 'light';
+            toggleTheme();
+          }}>
 						theme
 					</button>
 				</div>

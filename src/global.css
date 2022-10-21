@@ -10,17 +10,17 @@
 @tailwind utilities;
 
 body {
-  @apply bg-surface dark:bg-dark-surface
+  @apply bg-surface dark:bg-dark-surface;
 }
 
 .container {
-  @apply max-w-4xl mx-auto flex flex-col min-h-screen
+  @apply max-w-4xl mx-auto flex flex-col min-h-screen gap-4;
 }
 
 .theme-switcher {
-  @apply rounded-full dark:bg-yellow-300 bg-fuchsia-900 h-8 w-8 grid place-items-center
+  @apply rounded-full dark:bg-yellow-300 bg-fuchsia-900 h-8 w-8 grid place-items-center;
 }
 
 main {
-  @apply px-4
+  @apply px-4;
 }

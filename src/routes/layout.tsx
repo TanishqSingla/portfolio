@@ -1,12 +1,12 @@
-import { component$, Slot } from '@builder.io/qwik';
-import Footer from '~/components/Footer/Footer';
-import Header from '../components/header/header';
+import { component$, Slot } from "@builder.io/qwik";
+import Footer from "~/components/Footer/Footer";
+import Header from "../components/header/header";
 
 export default component$(() => {
   return (
-    <div class='container'>
+    <div class="container">
       <Header />
-      <main class='grow'>
+      <main class="grow">
         <section>
           <Slot />
         </section>

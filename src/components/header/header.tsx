@@ -1,6 +1,6 @@
 import { $, component$, useClientEffectQrl, useStore } from "@builder.io/qwik";
 import { Link } from "@builder.io/qwik-city";
-import { Sun } from "../icons";
+import { Moon, Sun } from "../icons";
 
 export default component$(() => {
   const store = useStore({ isDark: true });
@@ -45,12 +45,11 @@ export default component$(() => {
               toggleTheme();
             }}
           >
-            {/* {store.isDark ? (
-							<Sun color="white" size="32px" />
+            {store.isDark ? (
+							<Sun color="black" size="1rem" />
 						) : (
-							<Moon color="white" size="32px" />
-						)} */}
-            <Sun color={store.isDark ? "black" : "white"} size="1rem" />
+							<Moon color="white" size="2rem" />
+						)}
           </button>
         </div>
       </nav>

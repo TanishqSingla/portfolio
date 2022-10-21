@@ -9,12 +9,21 @@
 @tailwind components;
 @tailwind utilities;
 
+::-moz-selection { /* Code for Firefox */
+  @apply text-surface bg-primary
+}
+
+::selection {
+  @apply text-surface bg-primary
+}
+
 body {
-  @apply bg-surface dark:bg-dark-surface;
+  font-family: 'Poppins', sans-serif;
+  @apply bg-surface dark:bg-dark-surface
 }
 
 .container {
-  @apply max-w-4xl mx-auto flex flex-col min-h-screen gap-4;
+  @apply sm:max-w-5xl max-w-full mx-auto flex flex-col min-h-screen gap-4 px-4 sm:px-0
 }
 
 .theme-switcher {
@@ -23,4 +32,16 @@ body {
 
 main {
   @apply px-4;
+}
+
+h1 {
+  @apply text-4xl sm:text-5xl dark:text-white font-bold
+}
+
+h2 {
+  @apply text-3xl sm:text-4xl dark:text-white
+}
+
+.highlight {
+  @apply text-primary dark:text-accent
 }

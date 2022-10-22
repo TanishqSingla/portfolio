@@ -33,9 +33,6 @@ export default component$(() => {
           <li>
             <Link href="/blog">Blog</Link>
           </li>
-          <li>
-            <Link href="/contact">Contact</Link>
-          </li>
         </ul>
         <div class="theme-switcher">
           <button
@@ -46,7 +43,7 @@ export default component$(() => {
             }}
           >
             {store.isDark ? (
-							<Sun color="black" size="1rem" />
+							<Sun color="black" size="20px" />
 						) : (
 							<Moon color="white" size="2rem" />
 						)}

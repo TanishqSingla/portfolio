@@ -9,39 +9,45 @@
 @tailwind components;
 @tailwind utilities;
 
-::-moz-selection { /* Code for Firefox */
-  @apply text-surface bg-primary
+::-moz-selection {
+	/* Code for Firefox */
+	@apply text-surface bg-primary;
 }
 
 ::selection {
-  @apply text-surface bg-primary
+	@apply text-surface bg-primary;
 }
 
 body {
-  font-family: 'Poppins', sans-serif;
-  @apply bg-surface dark:bg-dark-surface
+	font-family: "Poppins", sans-serif;
+	@apply bg-surface dark:bg-dark-surface;
 }
 
 .container {
-  @apply sm:max-w-5xl max-w-full mx-auto flex flex-col min-h-screen gap-4 px-4 sm:px-0
+	@apply sm:max-w-5xl max-w-full mx-auto flex flex-col min-h-screen gap-4 px-4 sm:px-0;
 }
 
 .theme-switcher {
-  @apply rounded-full dark:bg-yellow-300 bg-fuchsia-900 h-8 w-8 grid place-items-center;
+	@apply rounded-full dark:bg-yellow-300 bg-fuchsia-900 h-8 w-8 grid place-items-center;
 }
 
 main {
-  @apply px-4;
+	@apply px-4;
 }
 
+.text {
+	@apply dark:text-white text-stone-700;
+}
 h1 {
-  @apply text-4xl sm:text-5xl dark:text-white font-bold
+	@apply text text-4xl sm:text-5xl font-bold;
 }
-
 h2 {
-  @apply text-3xl sm:text-4xl dark:text-white
+	@apply text text-3xl sm:text-4xl;
+}
+h3 {
+	@apply sm:text-2xl text-xl;
 }
 
 .highlight {
-  @apply text-primary dark:text-accent
+	@apply text-primary-soft dark:text-accent;
 }

@@ -21,7 +21,7 @@ export default component$(() => {
   useClientEffectQrl(toggleTheme);
 
   return (
-    <header class="sticky bg-gray-100/40 dark:bg-gray-600/40 backdrop-blur-sm px-4 py-4 mt-4 rounded-xl dark:text-white">
+    <header class="sticky bg-gray-100/40 dark:bg-gray-600/40 backdrop-blur-sm px-4 py-4 w-full top-4 self-start my-4 rounded-xl dark:text-white">
       <nav class="flex items-center">
         <ul class="flex gap-4 grow">
           <li>

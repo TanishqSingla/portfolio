@@ -32,19 +32,18 @@ h3 {
 	@apply text sm:text-2xl text-xl my-2;
 }
 p {
-	@apply text
+	@apply text;
 }
 
 .highlight {
 	@apply text-primary-soft dark:text-accent;
 }
 
-
 .social-links {
-	@apply p-4 flex gap-8
+	@apply p-4 flex gap-8;
 }
 
 .social-links > a {
-	transition: .3s ease-in;
-	@apply h-12 w-32 flex items-center justify-center gap-2 hover:bg-white rounded-md text-primary-soft
+	transition: 0.3s ease-in;
+	@apply h-12 w-32 flex items-center justify-center gap-2 hover:bg-white rounded-md text-primary-soft;
 }

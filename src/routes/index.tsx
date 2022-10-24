@@ -27,23 +27,29 @@ export default component$(() => {
 				<h3>Find me on</h3>
 				<div class="social-links">
 					<a href="https://www.github.com/TanishqSingla">
-						<Github fill="#344E41" size="24" />
+						<Github color="#344E41" size="24" />
 						Github
 					</a>
 					<a href="https://www.twitter.com/TanishqSingla_">
-						<Twitter fill="#344E41" size="24" />
+						<Twitter color="#344E41" size="24" />
 						Twitter
 					</a>
 					<a href="https://www.linkedin.com/in/tanishqsingla">
-						<Linkedin fill="#344E41" size="18" />
+						<Linkedin color="#344E41" size="18" />
 						Linkedin
 					</a>
 				</div>
 			</div>
 			<div class="downloads">
 				<h3>Download my resume</h3>
-				<div class='social-links'>
-					<a href="https://drive.google.com/file/d/1PbIfBANDUYlghoSRYx-4rEOi239JYUcj/view?usp=sharing" class='px-4'><Download fill="#344E41" size="24"/>Resume</a>
+				<div class="social-links">
+					<a
+						href="https://drive.google.com/file/d/1PbIfBANDUYlghoSRYx-4rEOi239JYUcj/view?usp=sharing"
+						class="px-4"
+					>
+						<Download color="#344E41" size="24" />
+						Resume
+					</a>
 				</div>
 			</div>
 		</div>

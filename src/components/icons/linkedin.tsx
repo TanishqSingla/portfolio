@@ -1,9 +1,9 @@
 import { component$ } from "@builder.io/qwik";
 
-export default component$(({ fill, size }: { [key: string]: string }) => {
+export default component$(({ color, size }: { [key: string]: string }) => {
 	return (
 		<svg
-      fill={fill}
+			fill={color}
 			xmlns="http://www.w3.org/2000/svg"
 			width={size}
 			height={size}

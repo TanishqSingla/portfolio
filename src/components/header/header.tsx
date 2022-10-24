@@ -1,9 +1,11 @@
-import { $, component$, useClientEffectQrl, useStore } from "@builder.io/qwik";
+import { $, component$, useClientEffectQrl, useStore, useStylesScoped$ } from "@builder.io/qwik";
 import { Link } from "@builder.io/qwik-city";
 import { Moon, Sun } from "../icons";
+import styles from './header.css'
 
 export default component$(() => {
   const store = useStore({ isDark: true });
+  useStylesScoped$(styles);
 
   const toggleTheme = $(() => {
     if (
@@ -21,7 +23,7 @@ export default component$(() => {
   useClientEffectQrl(toggleTheme);
 
   return (
-    <header class="sticky bg-gray-100/40 dark:bg-gray-600/40 backdrop-blur-sm px-4 py-4 w-full top-4 self-start my-4 rounded-xl dark:text-white">
+    <header class="bg-gray-200/40 dark:bg-stone-700/40 dark:text-white">
       <nav class="flex items-center">
         <ul class="flex gap-4 grow">
           <li>

@@ -4,7 +4,7 @@
 
 body {
 	font-family: "Poppins", sans-serif;
-	@apply bg-surface dark:bg-dark-surface selection:text-surface selection:bg-primary;
+	@apply bg-surface dark:bg-stone-900 selection:text-surface selection:bg-primary;
 }
 
 .container {

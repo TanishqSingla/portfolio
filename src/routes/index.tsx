@@ -1,9 +1,7 @@
 import { component$ } from "@builder.io/qwik";
 import type { DocumentHead } from "@builder.io/qwik-city";
+import { Github, Linkedin, Twitter } from "~/components/icons";
 import Download from "~/components/icons/download";
-import Github from "~/components/icons/github";
-import Linkedin from "~/components/icons/linkedin";
-import Twitter from "~/components/icons/twitter";
 
 export default component$(() => {
 	return (

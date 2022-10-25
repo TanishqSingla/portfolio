@@ -40,7 +40,7 @@ p {
 }
 
 .social-links {
-	@apply p-4 flex gap-8;
+	@apply p-4 flex gap-8 flex-wrap;
 }
 
 .social-links > a {

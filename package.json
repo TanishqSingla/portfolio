@@ -22,8 +22,8 @@
 		"qwik": "qwik"
 	},
 	"devDependencies": {
-		"@builder.io/qwik": "^0.11.1",
-		"@builder.io/qwik-city": "^0.0.115",
+		"@builder.io/qwik": "^0.15.2",
+		"@builder.io/qwik-city": "^0.0.128",
 		"@netlify/vite-plugin-netlify-edge": "1.1.0",
 		"@types/eslint": "8.4.6",
 		"@types/node": "latest",
@@ -39,5 +39,8 @@
 		"typescript": "4.8.3",
 		"vite": "3.1.1",
 		"vite-tsconfig-paths": "3.5.0"
+	},
+	"dependencies": {
+		"octokit": "^2.0.10"
 	}
 }
